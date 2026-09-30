@@ -1,0 +1,9 @@
+lxml
+mypy
+faker
+pyqt5
+pillow
+html5lib
+frozendict
+python-dotenv
+beautifulsoup4

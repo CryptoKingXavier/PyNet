@@ -1,0 +1,6 @@
+lxml
+pillow
+html5lib
+frozendict
+python-dotenv
+beautifulsoup4

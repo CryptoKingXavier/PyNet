@@ -1,0 +1,7 @@
+beautifulsoup4
+html5lib
+httpx
+lxml
+python-dotenv
+requests
+snoop

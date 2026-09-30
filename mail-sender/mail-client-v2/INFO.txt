@@ -1,0 +1,25 @@
+# Starting a debug server on localhost
+# Using a local debug smtp server for email testing in Python
+py -m aiosmtpd -n -l localhost:1025
+python -m aiosmtpd -n -l localhost:1025
+python3 -m aiosmtpd -n -l localhost:1025
+
+
+# This program generally tries to setuid nobody, unless this flag is set. The setuid call will fail if this program is not run as root (in which case, use this flag).
+-n, --nosetuid
+
+
+# Increase debugging output. Every -d increases debugging level by one.
+-d, --debug
+
+
+# Optional host and port to listen on. If the PORT part is not given, then port 8025 is used. If only :PORT is given, then localhost is used for the hostname. If neither are given, localhost:8025 is used.
+-l <[HOST][:PORT]>, --listen <[HOST][:PORT]>
+
+
+# ENVIRONMENT
+# How long the main thread will wait (in seconds) until the SMTP thread is ready. Default: 1.0
+AIOSMTPD_CONTROLLER_TIMEOUT
+
+
+# When sending html emails, always use plaintext emails as a fallback.
